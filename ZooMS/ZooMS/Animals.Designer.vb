@@ -29,9 +29,9 @@ Partial Class Animals
         Me.NewAnimalsTab = New System.Windows.Forms.TabPage()
         Me.ConditionTab = New System.Windows.Forms.TabPage()
         Me.RelocationTab = New System.Windows.Forms.TabPage()
+        Me.AnimalDeleteTab = New System.Windows.Forms.TabPage()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.AnimalDeleteTab = New System.Windows.Forms.TabPage()
         Me.TabControl1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -107,6 +107,17 @@ Partial Class Animals
         Me.RelocationTab.Text = "Animal Relocation"
         Me.RelocationTab.UseVisualStyleBackColor = True
         '
+        'AnimalDeleteTab
+        '
+        Me.AnimalDeleteTab.BackgroundImage = CType(resources.GetObject("AnimalDeleteTab.BackgroundImage"), System.Drawing.Image)
+        Me.AnimalDeleteTab.Location = New System.Drawing.Point(4, 29)
+        Me.AnimalDeleteTab.Name = "AnimalDeleteTab"
+        Me.AnimalDeleteTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.AnimalDeleteTab.Size = New System.Drawing.Size(585, 414)
+        Me.AnimalDeleteTab.TabIndex = 3
+        Me.AnimalDeleteTab.Text = "Delete Animals"
+        Me.AnimalDeleteTab.UseVisualStyleBackColor = True
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -130,17 +141,6 @@ Partial Class Animals
         Me.PictureBox1.Size = New System.Drawing.Size(692, 541)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
-        '
-        'AnimalDeleteTab
-        '
-        Me.AnimalDeleteTab.BackgroundImage = CType(resources.GetObject("AnimalDeleteTab.BackgroundImage"), System.Drawing.Image)
-        Me.AnimalDeleteTab.Location = New System.Drawing.Point(4, 29)
-        Me.AnimalDeleteTab.Name = "AnimalDeleteTab"
-        Me.AnimalDeleteTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.AnimalDeleteTab.Size = New System.Drawing.Size(585, 414)
-        Me.AnimalDeleteTab.TabIndex = 3
-        Me.AnimalDeleteTab.Text = "Delete Animals"
-        Me.AnimalDeleteTab.UseVisualStyleBackColor = True
         '
         'Animals
         '

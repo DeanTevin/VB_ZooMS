@@ -27,14 +27,12 @@ Partial Class Medicine
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.NewMedicineTab = New System.Windows.Forms.TabPage()
-        Me.MedicineStockTab = New System.Windows.Forms.TabPage()
-        Me.DeleteMedicineTab = New System.Windows.Forms.TabPage()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.NewMedStock = New System.Windows.Forms.TextBox()
+        Me.NewMedName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.MedicineStockTab = New System.Windows.Forms.TabPage()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -43,12 +41,14 @@ Partial Class Medicine
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.DeleteMedicineTab = New System.Windows.Forms.TabPage()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.NewMedicineTab.SuspendLayout()
@@ -95,8 +95,8 @@ Partial Class Medicine
         '
         Me.NewMedicineTab.BackgroundImage = CType(resources.GetObject("NewMedicineTab.BackgroundImage"), System.Drawing.Image)
         Me.NewMedicineTab.Controls.Add(Me.Button1)
-        Me.NewMedicineTab.Controls.Add(Me.TextBox2)
-        Me.NewMedicineTab.Controls.Add(Me.TextBox1)
+        Me.NewMedicineTab.Controls.Add(Me.NewMedStock)
+        Me.NewMedicineTab.Controls.Add(Me.NewMedName)
         Me.NewMedicineTab.Controls.Add(Me.Label4)
         Me.NewMedicineTab.Controls.Add(Me.Label3)
         Me.NewMedicineTab.Location = New System.Drawing.Point(4, 29)
@@ -107,80 +107,29 @@ Partial Class Medicine
         Me.NewMedicineTab.Text = "New Medicine"
         Me.NewMedicineTab.UseVisualStyleBackColor = True
         '
-        'MedicineStockTab
+        'Button1
         '
-        Me.MedicineStockTab.BackgroundImage = CType(resources.GetObject("MedicineStockTab.BackgroundImage"), System.Drawing.Image)
-        Me.MedicineStockTab.Controls.Add(Me.TextBox3)
-        Me.MedicineStockTab.Controls.Add(Me.TextBox4)
-        Me.MedicineStockTab.Controls.Add(Me.ComboBox1)
-        Me.MedicineStockTab.Controls.Add(Me.Button4)
-        Me.MedicineStockTab.Controls.Add(Me.Button5)
-        Me.MedicineStockTab.Controls.Add(Me.Label2)
-        Me.MedicineStockTab.Controls.Add(Me.Label5)
-        Me.MedicineStockTab.Controls.Add(Me.Label6)
-        Me.MedicineStockTab.Location = New System.Drawing.Point(4, 29)
-        Me.MedicineStockTab.Name = "MedicineStockTab"
-        Me.MedicineStockTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.MedicineStockTab.Size = New System.Drawing.Size(585, 414)
-        Me.MedicineStockTab.TabIndex = 1
-        Me.MedicineStockTab.Text = "Medicine Stock"
-        Me.MedicineStockTab.UseVisualStyleBackColor = True
+        Me.Button1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(221, 288)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(165, 96)
+        Me.Button1.TabIndex = 25
+        Me.Button1.Text = "ADD NEW"
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'DeleteMedicineTab
+        'NewMedStock
         '
-        Me.DeleteMedicineTab.BackgroundImage = CType(resources.GetObject("DeleteMedicineTab.BackgroundImage"), System.Drawing.Image)
-        Me.DeleteMedicineTab.Controls.Add(Me.TextBox6)
-        Me.DeleteMedicineTab.Controls.Add(Me.ComboBox2)
-        Me.DeleteMedicineTab.Controls.Add(Me.Button6)
-        Me.DeleteMedicineTab.Controls.Add(Me.Label8)
-        Me.DeleteMedicineTab.Controls.Add(Me.Label9)
-        Me.DeleteMedicineTab.Location = New System.Drawing.Point(4, 29)
-        Me.DeleteMedicineTab.Name = "DeleteMedicineTab"
-        Me.DeleteMedicineTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.DeleteMedicineTab.Size = New System.Drawing.Size(585, 414)
-        Me.DeleteMedicineTab.TabIndex = 2
-        Me.DeleteMedicineTab.Text = "Delete Medicine"
-        Me.DeleteMedicineTab.UseVisualStyleBackColor = True
+        Me.NewMedStock.Location = New System.Drawing.Point(154, 241)
+        Me.NewMedStock.Name = "NewMedStock"
+        Me.NewMedStock.Size = New System.Drawing.Size(380, 26)
+        Me.NewMedStock.TabIndex = 24
         '
-        'Button2
+        'NewMedName
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(490, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(70, 71)
-        Me.Button2.TabIndex = 4
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(566, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(70, 71)
-        Me.Button3.TabIndex = 5
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(154, 241)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(380, 26)
-        Me.TextBox2.TabIndex = 24
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(154, 139)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(380, 26)
-        Me.TextBox1.TabIndex = 23
+        Me.NewMedName.Location = New System.Drawing.Point(154, 139)
+        Me.NewMedName.Name = "NewMedName"
+        Me.NewMedName.Size = New System.Drawing.Size(380, 26)
+        Me.NewMedName.TabIndex = 23
         '
         'Label4
         '
@@ -203,6 +152,25 @@ Partial Class Medicine
         Me.Label3.Size = New System.Drawing.Size(177, 26)
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "Medicine Name"
+        '
+        'MedicineStockTab
+        '
+        Me.MedicineStockTab.BackgroundImage = CType(resources.GetObject("MedicineStockTab.BackgroundImage"), System.Drawing.Image)
+        Me.MedicineStockTab.Controls.Add(Me.TextBox3)
+        Me.MedicineStockTab.Controls.Add(Me.TextBox4)
+        Me.MedicineStockTab.Controls.Add(Me.ComboBox1)
+        Me.MedicineStockTab.Controls.Add(Me.Button4)
+        Me.MedicineStockTab.Controls.Add(Me.Button5)
+        Me.MedicineStockTab.Controls.Add(Me.Label2)
+        Me.MedicineStockTab.Controls.Add(Me.Label5)
+        Me.MedicineStockTab.Controls.Add(Me.Label6)
+        Me.MedicineStockTab.Location = New System.Drawing.Point(4, 29)
+        Me.MedicineStockTab.Name = "MedicineStockTab"
+        Me.MedicineStockTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.MedicineStockTab.Size = New System.Drawing.Size(585, 414)
+        Me.MedicineStockTab.TabIndex = 1
+        Me.MedicineStockTab.Text = "Medicine Stock"
+        Me.MedicineStockTab.UseVisualStyleBackColor = True
         '
         'TextBox3
         '
@@ -280,6 +248,22 @@ Partial Class Medicine
         Me.Label6.TabIndex = 19
         Me.Label6.Text = "Medicine Name"
         '
+        'DeleteMedicineTab
+        '
+        Me.DeleteMedicineTab.BackgroundImage = CType(resources.GetObject("DeleteMedicineTab.BackgroundImage"), System.Drawing.Image)
+        Me.DeleteMedicineTab.Controls.Add(Me.TextBox6)
+        Me.DeleteMedicineTab.Controls.Add(Me.ComboBox2)
+        Me.DeleteMedicineTab.Controls.Add(Me.Button6)
+        Me.DeleteMedicineTab.Controls.Add(Me.Label8)
+        Me.DeleteMedicineTab.Controls.Add(Me.Label9)
+        Me.DeleteMedicineTab.Location = New System.Drawing.Point(4, 29)
+        Me.DeleteMedicineTab.Name = "DeleteMedicineTab"
+        Me.DeleteMedicineTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.DeleteMedicineTab.Size = New System.Drawing.Size(585, 414)
+        Me.DeleteMedicineTab.TabIndex = 2
+        Me.DeleteMedicineTab.Text = "Delete Medicine"
+        Me.DeleteMedicineTab.UseVisualStyleBackColor = True
+        '
         'TextBox6
         '
         Me.TextBox6.Enabled = False
@@ -328,15 +312,31 @@ Partial Class Medicine
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "Food Name"
         '
-        'Button1
+        'Button2
         '
-        Me.Button1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(221, 288)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 96)
-        Me.Button1.TabIndex = 25
-        Me.Button1.Text = "ADD NEW"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(490, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(70, 71)
+        Me.Button2.TabIndex = 4
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(566, 0)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(70, 71)
+        Me.Button3.TabIndex = 5
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Medicine
         '
@@ -372,8 +372,8 @@ Partial Class Medicine
     Friend WithEvents Button3 As Button
     Private WithEvents TabControl1 As TabControl
     Friend WithEvents DeleteMedicineTab As TabPage
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents NewMedStock As TextBox
+    Friend WithEvents NewMedName As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
