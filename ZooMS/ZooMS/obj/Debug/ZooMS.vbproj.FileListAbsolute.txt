@@ -1,0 +1,11 @@
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\bin\Debug\ZooMS.exe.config
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\bin\Debug\ZooMS.exe
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\bin\Debug\ZooMS.pdb
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\bin\Debug\ZooMS.xml
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\obj\Debug\ZooMS.vbprojResolveAssemblyReference.cache
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\obj\Debug\ZooMS.Form1.resources
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\obj\Debug\ZooMS.Resources.resources
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\obj\Debug\ZooMS.vbproj.GenerateResource.Cache
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\obj\Debug\ZooMS.exe
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\obj\Debug\ZooMS.xml
+E:\Tugas PNJ\Pemrograman Visual\ZooMS\ZooMS\obj\Debug\ZooMS.pdb
