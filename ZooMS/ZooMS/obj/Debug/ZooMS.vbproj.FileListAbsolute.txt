@@ -30,3 +30,7 @@ E:\Tugas PNJ\Pemrograman Visual\VB_ZooMS\ZooMS\ZooMS\bin\Debug\Google.Protobuf.d
 E:\Tugas PNJ\Pemrograman Visual\VB_ZooMS\ZooMS\ZooMS\bin\Debug\MySql.Data.dll
 E:\Tugas PNJ\Pemrograman Visual\VB_ZooMS\ZooMS\ZooMS\bin\Debug\Google.Protobuf.xml
 E:\Tugas PNJ\Pemrograman Visual\VB_ZooMS\ZooMS\ZooMS\bin\Debug\MySql.Data.xml
+C:\Users\Sabrina\Desktop\punya ichsan\VB_ZooMS\ZooMS\ZooMS\bin\Debug\ZooMS.exe.config
+C:\Users\Sabrina\Desktop\punya ichsan\VB_ZooMS\ZooMS\ZooMS\obj\Debug\ZooMS.exe
+C:\Users\Sabrina\Desktop\punya ichsan\VB_ZooMS\ZooMS\ZooMS\obj\Debug\ZooMS.xml
+C:\Users\Sabrina\Desktop\punya ichsan\VB_ZooMS\ZooMS\ZooMS\obj\Debug\ZooMS.pdb
