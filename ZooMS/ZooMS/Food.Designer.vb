@@ -49,10 +49,10 @@ Partial Class Food
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(495, -2)
+        Me.Button3.Location = New System.Drawing.Point(557, -2)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(62, 57)
+        Me.Button3.Size = New System.Drawing.Size(70, 71)
         Me.Button3.TabIndex = 10
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -63,21 +63,21 @@ Partial Class Food
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(428, -2)
+        Me.Button2.Location = New System.Drawing.Point(482, -2)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(62, 57)
+        Me.Button2.Size = New System.Drawing.Size(70, 71)
         Me.Button2.TabIndex = 9
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.FoodStockTab)
-        Me.TabControl1.Location = New System.Drawing.Point(14, 168)
+        Me.TabControl1.Location = New System.Drawing.Point(16, 210)
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(527, 358)
+        Me.TabControl1.Size = New System.Drawing.Size(593, 448)
         Me.TabControl1.TabIndex = 8
         '
         'FoodStockTab
@@ -91,48 +91,48 @@ Partial Class Food
         Me.FoodStockTab.Controls.Add(Me.Label4)
         Me.FoodStockTab.Controls.Add(Me.Label3)
         Me.FoodStockTab.Controls.Add(Me.Label2)
-        Me.FoodStockTab.Location = New System.Drawing.Point(4, 25)
+        Me.FoodStockTab.Location = New System.Drawing.Point(4, 29)
         Me.FoodStockTab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.FoodStockTab.Name = "FoodStockTab"
         Me.FoodStockTab.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.FoodStockTab.Size = New System.Drawing.Size(519, 329)
+        Me.FoodStockTab.Size = New System.Drawing.Size(585, 415)
         Me.FoodStockTab.TabIndex = 0
         Me.FoodStockTab.Text = "Food Stock"
         Me.FoodStockTab.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(110, 203)
+        Me.TextBox2.Location = New System.Drawing.Point(124, 254)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(338, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(380, 26)
         Me.TextBox2.TabIndex = 18
         '
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(110, 138)
+        Me.TextBox1.Location = New System.Drawing.Point(124, 172)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(338, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(380, 26)
         Me.TextBox1.TabIndex = 17
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(110, 82)
+        Me.ComboBox1.Location = New System.Drawing.Point(124, 102)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(338, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(380, 28)
         Me.ComboBox1.TabIndex = 16
         '
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(333, 240)
+        Me.Button4.Location = New System.Drawing.Point(375, 300)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(124, 66)
+        Me.Button4.Size = New System.Drawing.Size(140, 82)
         Me.Button4.TabIndex = 15
         Me.Button4.Text = "ADD"
         Me.Button4.UseVisualStyleBackColor = True
@@ -140,10 +140,10 @@ Partial Class Food
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(64, 240)
+        Me.Button1.Location = New System.Drawing.Point(72, 300)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(124, 66)
+        Me.Button1.Size = New System.Drawing.Size(140, 82)
         Me.Button1.TabIndex = 14
         Me.Button1.Text = "TAKE"
         Me.Button1.UseVisualStyleBackColor = True
@@ -153,9 +153,9 @@ Partial Class Food
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(31, 171)
+        Me.Label4.Location = New System.Drawing.Point(35, 214)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 24)
+        Me.Label4.Size = New System.Drawing.Size(101, 26)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Quantity"
         '
@@ -164,9 +164,9 @@ Partial Class Food
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(31, 113)
+        Me.Label3.Location = New System.Drawing.Point(35, 141)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 24)
+        Me.Label3.Size = New System.Drawing.Size(72, 26)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Stock"
         '
@@ -175,9 +175,9 @@ Partial Class Food
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(31, 59)
+        Me.Label2.Location = New System.Drawing.Point(35, 74)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(120, 24)
+        Me.Label2.Size = New System.Drawing.Size(135, 26)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Food Name"
         '
@@ -187,10 +187,10 @@ Partial Class Food
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Impact", 28.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(4, 81)
+        Me.Label1.Location = New System.Drawing.Point(4, 101)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(531, 59)
+        Me.Label1.Size = New System.Drawing.Size(626, 68)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "CARE | INSPIRE | EMPOWER"
         '
@@ -199,19 +199,19 @@ Partial Class Food
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-27, 88)
+        Me.PictureBox1.Location = New System.Drawing.Point(-30, 110)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(600, 477)
+        Me.PictureBox1.Size = New System.Drawing.Size(675, 596)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
         'Food
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(567, 561)
+        Me.ClientSize = New System.Drawing.Size(638, 701)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TabControl1)
