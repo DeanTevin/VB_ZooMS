@@ -57,15 +57,15 @@ Partial Class MainMenu
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackColor = System.Drawing.Color.Black
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button1.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(108, 371)
+        Me.Button1.Location = New System.Drawing.Point(139, 371)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(279, 200)
+        Me.Button1.Size = New System.Drawing.Size(248, 171)
         Me.Button1.TabIndex = 13
         Me.Button1.Text = "CHECK"
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -73,15 +73,15 @@ Partial Class MainMenu
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.BackColor = System.Drawing.Color.Black
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button2.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(554, 371)
+        Me.Button2.Location = New System.Drawing.Point(536, 371)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(279, 200)
+        Me.Button2.Size = New System.Drawing.Size(252, 171)
         Me.Button2.TabIndex = 14
         Me.Button2.Text = "MANAGE"
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -102,8 +102,7 @@ Partial Class MainMenu
         '
         'MainMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(905, 624)
         Me.Controls.Add(Me.Label1)

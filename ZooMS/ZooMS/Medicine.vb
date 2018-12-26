@@ -86,7 +86,6 @@ Public Class Medicine
         conn.Close()
     End Sub
 
-
     Private Sub MedicineTake(sender As Object, e As EventArgs) Handles Button5.Click
         qty = Convert.ToInt32(TextBox3.Text)
         stock = Convert.ToInt32(TextBox4.Text)

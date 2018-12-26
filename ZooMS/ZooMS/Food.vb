@@ -12,10 +12,6 @@ Public Class Food
     Dim reader As MySqlDataReader
     Dim stock, qty, Result As Integer
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         conn.Open()
         Try
@@ -60,10 +56,7 @@ Public Class Food
         qty = Convert.ToInt32(TextBox2.Text)
         stock = Convert.ToInt32(TextBox1.Text)
         Result = stock + qty
-        If Result < 0 Then
-            MsgBox("Quantity taken cannot exceeds stock, Transaction Failed", MsgBoxStyle.Information, "information")
-        Else
-            conn.Open()
+        conn.Open()
             Try
                 CMD.CommandType = CommandType.Text
                 CMD.CommandText = "UPDATE medicine set Stock=" & Result & " WHERE MedicineName='" & ComboBox1.Text & "'"
@@ -74,8 +67,7 @@ Public Class Food
             Catch ex As Exception
                 MsgBox("Transaction Failed", MsgBoxStyle.Information, "information")
             End Try
-            conn.Close()
-        End If
+        conn.Close()
     End Sub
 
     Private Sub Food_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -102,4 +94,23 @@ Public Class Food
         conn.Close()
     End Sub
 
+    Private Sub TextBox2_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+
+    End Sub
+
+    Private Sub TextBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+
+    End Sub
 End Class

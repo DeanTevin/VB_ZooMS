@@ -7,6 +7,7 @@ Module koneksi
     Public CMD As New MySqlCommand
     Public DA As New MySqlDataAdapter
 
+    Public Session As String
     Public Sub Connect(ByVal server As String, ByVal user As String, ByVal pass As String, ByVal DB As String)
         If Conn.State = ConnectionState.Closed Then
             Dim myString As String = "server= " & server & ";user= " & user & "password= " & pass & ";database= " & DB & ";"
