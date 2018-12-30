@@ -55,7 +55,7 @@ Partial Class ManagementMenu
         Me.Button2.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(47, 349)
+        Me.Button2.Location = New System.Drawing.Point(12, 349)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(209, 210)
         Me.Button2.TabIndex = 19
@@ -95,9 +95,9 @@ Partial Class ManagementMenu
         Me.Button1.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(274, 349)
+        Me.Button1.Location = New System.Drawing.Point(238, 349)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(201, 210)
+        Me.Button1.Size = New System.Drawing.Size(209, 210)
         Me.Button1.TabIndex = 21
         Me.Button1.Text = "Place"
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -111,9 +111,9 @@ Partial Class ManagementMenu
         Me.Button4.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.White
         Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.Location = New System.Drawing.Point(498, 349)
+        Me.Button4.Location = New System.Drawing.Point(463, 349)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(192, 210)
+        Me.Button4.Size = New System.Drawing.Size(209, 210)
         Me.Button4.TabIndex = 22
         Me.Button4.Text = "Medicine"
         Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -127,9 +127,9 @@ Partial Class ManagementMenu
         Me.Button5.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(705, 349)
+        Me.Button5.Location = New System.Drawing.Point(687, 349)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(191, 210)
+        Me.Button5.Size = New System.Drawing.Size(209, 210)
         Me.Button5.TabIndex = 23
         Me.Button5.Text = "Animals"
         Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText

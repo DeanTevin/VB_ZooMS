@@ -27,6 +27,7 @@ Partial Class Animals
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.NewAnimalsTab = New System.Windows.Forms.TabPage()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -36,6 +37,8 @@ Partial Class Animals
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.ConditionTab = New System.Windows.Forms.TabPage()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -44,6 +47,8 @@ Partial Class Animals
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.RelocationTab = New System.Windows.Forms.TabPage()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
@@ -63,7 +68,6 @@ Partial Class Animals
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.TabControl1.SuspendLayout()
         Me.NewAnimalsTab.SuspendLayout()
         Me.ConditionTab.SuspendLayout()
@@ -134,9 +138,21 @@ Partial Class Animals
         Me.NewAnimalsTab.Text = "New Animals"
         Me.NewAnimalsTab.UseVisualStyleBackColor = True
         '
+        'ComboBox7
+        '
+        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Location = New System.Drawing.Point(145, 202)
+        Me.ComboBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(380, 28)
+        Me.ComboBox7.TabIndex = 48
+        '
         'ComboBox4
         '
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Healthy", "Sick", "Pregnant"})
         Me.ComboBox4.Location = New System.Drawing.Point(145, 271)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox4.Name = "ComboBox4"
@@ -156,7 +172,6 @@ Partial Class Animals
         '
         'TextBox2
         '
-        Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(145, 76)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox2.Name = "TextBox2"
@@ -176,7 +191,6 @@ Partial Class Animals
         '
         'TextBox9
         '
-        Me.TextBox9.Enabled = False
         Me.TextBox9.Location = New System.Drawing.Point(145, 142)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox9.Name = "TextBox9"
@@ -219,6 +233,8 @@ Partial Class Animals
         'ConditionTab
         '
         Me.ConditionTab.BackgroundImage = CType(resources.GetObject("ConditionTab.BackgroundImage"), System.Drawing.Image)
+        Me.ConditionTab.Controls.Add(Me.TextBox1)
+        Me.ConditionTab.Controls.Add(Me.Label16)
         Me.ConditionTab.Controls.Add(Me.ComboBox3)
         Me.ConditionTab.Controls.Add(Me.Label7)
         Me.ConditionTab.Controls.Add(Me.ComboBox1)
@@ -235,10 +251,32 @@ Partial Class Animals
         Me.ConditionTab.Text = "Animals Condition"
         Me.ConditionTab.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Location = New System.Drawing.Point(146, 180)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(380, 26)
+        Me.TextBox1.TabIndex = 55
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(57, 148)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(167, 26)
+        Me.Label16.TabIndex = 54
+        Me.Label16.Text = "Species Name"
+        '
         'ComboBox3
         '
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(146, 229)
+        Me.ComboBox3.Items.AddRange(New Object() {"Healthy", "Sick", "Pregnant"})
+        Me.ComboBox3.Location = New System.Drawing.Point(146, 306)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(380, 28)
@@ -249,7 +287,7 @@ Partial Class Animals
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(57, 196)
+        Me.Label7.Location = New System.Drawing.Point(57, 273)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(169, 26)
         Me.Label7.TabIndex = 52
@@ -257,6 +295,7 @@ Partial Class Animals
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(146, 101)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -267,7 +306,7 @@ Partial Class Animals
         'TextBox4
         '
         Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(146, 164)
+        Me.TextBox4.Location = New System.Drawing.Point(146, 241)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(380, 26)
@@ -276,7 +315,7 @@ Partial Class Animals
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(232, 299)
+        Me.Button1.Location = New System.Drawing.Point(232, 347)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(154, 42)
@@ -289,7 +328,7 @@ Partial Class Animals
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(57, 131)
+        Me.Label3.Location = New System.Drawing.Point(57, 208)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(80, 26)
         Me.Label3.TabIndex = 47
@@ -309,6 +348,8 @@ Partial Class Animals
         'RelocationTab
         '
         Me.RelocationTab.BackgroundImage = CType(resources.GetObject("RelocationTab.BackgroundImage"), System.Drawing.Image)
+        Me.RelocationTab.Controls.Add(Me.TextBox8)
+        Me.RelocationTab.Controls.Add(Me.Label17)
         Me.RelocationTab.Controls.Add(Me.ComboBox2)
         Me.RelocationTab.Controls.Add(Me.Label5)
         Me.RelocationTab.Controls.Add(Me.ComboBox5)
@@ -325,10 +366,31 @@ Partial Class Animals
         Me.RelocationTab.Text = "Animal Relocation"
         Me.RelocationTab.UseVisualStyleBackColor = True
         '
+        'TextBox8
+        '
+        Me.TextBox8.Enabled = False
+        Me.TextBox8.Location = New System.Drawing.Point(146, 174)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(380, 26)
+        Me.TextBox8.TabIndex = 62
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.White
+        Me.Label17.Location = New System.Drawing.Point(57, 142)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(167, 26)
+        Me.Label17.TabIndex = 61
+        Me.Label17.Text = "Species Name"
+        '
         'ComboBox2
         '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(146, 229)
+        Me.ComboBox2.Location = New System.Drawing.Point(146, 294)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(380, 28)
@@ -339,7 +401,7 @@ Partial Class Animals
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(57, 196)
+        Me.Label5.Location = New System.Drawing.Point(57, 261)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(161, 26)
         Me.Label5.TabIndex = 59
@@ -347,6 +409,7 @@ Partial Class Animals
         '
         'ComboBox5
         '
+        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox5.FormattingEnabled = True
         Me.ComboBox5.Location = New System.Drawing.Point(146, 101)
         Me.ComboBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -357,7 +420,7 @@ Partial Class Animals
         'TextBox3
         '
         Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(146, 164)
+        Me.TextBox3.Location = New System.Drawing.Point(146, 229)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(380, 26)
@@ -366,7 +429,7 @@ Partial Class Animals
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(232, 299)
+        Me.Button4.Location = New System.Drawing.Point(231, 343)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(154, 42)
@@ -379,7 +442,7 @@ Partial Class Animals
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(57, 131)
+        Me.Label6.Location = New System.Drawing.Point(57, 196)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 26)
         Me.Label6.TabIndex = 55
@@ -428,6 +491,7 @@ Partial Class Animals
         '
         'ComboBox6
         '
+        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox6.FormattingEnabled = True
         Me.ComboBox6.Location = New System.Drawing.Point(146, 70)
         Me.ComboBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -533,15 +597,6 @@ Partial Class Animals
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'ComboBox7
-        '
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(145, 202)
-        Me.ComboBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(380, 28)
-        Me.ComboBox7.TabIndex = 48
-        '
         'Animals
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -612,4 +667,8 @@ Partial Class Animals
     Friend WithEvents Label15 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents Label17 As Label
 End Class

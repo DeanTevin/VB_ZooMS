@@ -25,7 +25,7 @@ Partial Class Place
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Place))
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.EditPlaceName = New System.Windows.Forms.TabControl()
         Me.NewPlaceTab = New System.Windows.Forms.TabPage()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.ButtonAdd = New System.Windows.Forms.Button()
@@ -34,7 +34,7 @@ Partial Class Place
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.EditPlaceTab = New System.Windows.Forms.TabPage()
+        Me.EditPlaceHabitat = New System.Windows.Forms.TabPage()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ButtonUp = New System.Windows.Forms.Button()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
@@ -50,12 +50,21 @@ Partial Class Place
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TabControl1.SuspendLayout()
+        Me.EditPlaceName.SuspendLayout()
         Me.NewPlaceTab.SuspendLayout()
-        Me.EditPlaceTab.SuspendLayout()
+        Me.EditPlaceHabitat.SuspendLayout()
         Me.DeletePlaceTab.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,17 +96,18 @@ Partial Class Place
         Me.Button2.TabIndex = 9
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'TabControl1
+        'EditPlaceName
         '
-        Me.TabControl1.Controls.Add(Me.NewPlaceTab)
-        Me.TabControl1.Controls.Add(Me.EditPlaceTab)
-        Me.TabControl1.Controls.Add(Me.DeletePlaceTab)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 198)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(593, 448)
-        Me.TabControl1.TabIndex = 8
+        Me.EditPlaceName.Controls.Add(Me.NewPlaceTab)
+        Me.EditPlaceName.Controls.Add(Me.EditPlaceHabitat)
+        Me.EditPlaceName.Controls.Add(Me.DeletePlaceTab)
+        Me.EditPlaceName.Controls.Add(Me.TabPage1)
+        Me.EditPlaceName.Location = New System.Drawing.Point(12, 198)
+        Me.EditPlaceName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.EditPlaceName.Name = "EditPlaceName"
+        Me.EditPlaceName.SelectedIndex = 0
+        Me.EditPlaceName.Size = New System.Drawing.Size(593, 448)
+        Me.EditPlaceName.TabIndex = 8
         '
         'NewPlaceTab
         '
@@ -120,7 +130,6 @@ Partial Class Place
         '
         'TextBox2
         '
-        Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(146, 79)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox2.Name = "TextBox2"
@@ -140,7 +149,9 @@ Partial Class Place
         '
         'ComboBox4
         '
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Andean Plateaus", "Outback", "Alpine", "Savannah", "Temperate Forest", "Tropical Rainforest", "Tundra", "Grasslands"})
         Me.ComboBox4.Location = New System.Drawing.Point(147, 206)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox4.Name = "ComboBox4"
@@ -149,7 +160,6 @@ Partial Class Place
         '
         'TextBox9
         '
-        Me.TextBox9.Enabled = False
         Me.TextBox9.Location = New System.Drawing.Point(146, 145)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox9.Name = "TextBox9"
@@ -189,27 +199,28 @@ Partial Class Place
         Me.Label14.TabIndex = 30
         Me.Label14.Text = "Place ID"
         '
-        'EditPlaceTab
+        'EditPlaceHabitat
         '
-        Me.EditPlaceTab.BackgroundImage = CType(resources.GetObject("EditPlaceTab.BackgroundImage"), System.Drawing.Image)
-        Me.EditPlaceTab.Controls.Add(Me.ComboBox2)
-        Me.EditPlaceTab.Controls.Add(Me.ButtonUp)
-        Me.EditPlaceTab.Controls.Add(Me.ComboBox3)
-        Me.EditPlaceTab.Controls.Add(Me.TextBox1)
-        Me.EditPlaceTab.Controls.Add(Me.Label2)
-        Me.EditPlaceTab.Controls.Add(Me.Label3)
-        Me.EditPlaceTab.Controls.Add(Me.Label4)
-        Me.EditPlaceTab.Location = New System.Drawing.Point(4, 29)
-        Me.EditPlaceTab.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.EditPlaceTab.Name = "EditPlaceTab"
-        Me.EditPlaceTab.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.EditPlaceTab.Size = New System.Drawing.Size(585, 415)
-        Me.EditPlaceTab.TabIndex = 1
-        Me.EditPlaceTab.Text = "Edit Place"
-        Me.EditPlaceTab.UseVisualStyleBackColor = True
+        Me.EditPlaceHabitat.BackgroundImage = CType(resources.GetObject("EditPlaceHabitat.BackgroundImage"), System.Drawing.Image)
+        Me.EditPlaceHabitat.Controls.Add(Me.ComboBox2)
+        Me.EditPlaceHabitat.Controls.Add(Me.ButtonUp)
+        Me.EditPlaceHabitat.Controls.Add(Me.ComboBox3)
+        Me.EditPlaceHabitat.Controls.Add(Me.TextBox1)
+        Me.EditPlaceHabitat.Controls.Add(Me.Label2)
+        Me.EditPlaceHabitat.Controls.Add(Me.Label3)
+        Me.EditPlaceHabitat.Controls.Add(Me.Label4)
+        Me.EditPlaceHabitat.Location = New System.Drawing.Point(4, 29)
+        Me.EditPlaceHabitat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.EditPlaceHabitat.Name = "EditPlaceHabitat"
+        Me.EditPlaceHabitat.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.EditPlaceHabitat.Size = New System.Drawing.Size(585, 415)
+        Me.EditPlaceHabitat.TabIndex = 1
+        Me.EditPlaceHabitat.Text = "Edit Habitat"
+        Me.EditPlaceHabitat.UseVisualStyleBackColor = True
         '
         'ComboBox2
         '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(145, 76)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -230,7 +241,9 @@ Partial Class Place
         '
         'ComboBox3
         '
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Andean Plateaus", "Outback", "Alpine", "Savannah", "Temperate Forest", "Tropical Rainforest", "Tundra", "Grasslands"})
         Me.ComboBox3.Location = New System.Drawing.Point(146, 204)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox3.Name = "ComboBox3"
@@ -275,9 +288,9 @@ Partial Class Place
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(56, 44)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(142, 26)
+        Me.Label4.Size = New System.Drawing.Size(103, 26)
         Me.Label4.TabIndex = 38
-        Me.Label4.Text = "Place Name"
+        Me.Label4.Text = "Place ID"
         '
         'DeletePlaceTab
         '
@@ -309,6 +322,7 @@ Partial Class Place
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(145, 76)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -354,9 +368,9 @@ Partial Class Place
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(56, 111)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(103, 26)
+        Me.Label6.Size = New System.Drawing.Size(142, 26)
         Me.Label6.TabIndex = 46
-        Me.Label6.Text = "Place ID"
+        Me.Label6.Text = "Place Name"
         '
         'Label7
         '
@@ -365,9 +379,99 @@ Partial Class Place
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(56, 44)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(142, 26)
+        Me.Label7.Size = New System.Drawing.Size(103, 26)
         Me.Label7.TabIndex = 45
-        Me.Label7.Text = "Place Name"
+        Me.Label7.Text = "Place ID"
+        '
+        'TabPage1
+        '
+        Me.TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage1.Controls.Add(Me.TextBox6)
+        Me.TabPage1.Controls.Add(Me.ComboBox5)
+        Me.TabPage1.Controls.Add(Me.Button1)
+        Me.TabPage1.Controls.Add(Me.TextBox5)
+        Me.TabPage1.Controls.Add(Me.Label8)
+        Me.TabPage1.Controls.Add(Me.Label9)
+        Me.TabPage1.Controls.Add(Me.Label10)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TabPage1.Size = New System.Drawing.Size(585, 415)
+        Me.TabPage1.TabIndex = 3
+        Me.TabPage1.Text = "Edit Name"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(145, 202)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(380, 26)
+        Me.TextBox6.TabIndex = 45
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Location = New System.Drawing.Point(145, 76)
+        Me.ComboBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(380, 28)
+        Me.ComboBox5.TabIndex = 44
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(215, 270)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(165, 96)
+        Me.Button1.TabIndex = 43
+        Me.Button1.Text = "UPDATE"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Enabled = False
+        Me.TextBox5.Location = New System.Drawing.Point(145, 142)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(380, 26)
+        Me.TextBox5.TabIndex = 41
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(56, 174)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(129, 26)
+        Me.Label8.TabIndex = 40
+        Me.Label8.Text = "New Name"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(56, 111)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(142, 26)
+        Me.Label9.TabIndex = 39
+        Me.Label9.Text = "Place Name"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(56, 44)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(103, 26)
+        Me.Label10.TabIndex = 38
+        Me.Label10.Text = "Place ID"
         '
         'Label1
         '
@@ -402,19 +506,21 @@ Partial Class Place
         Me.ClientSize = New System.Drawing.Size(647, 692)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.EditPlaceName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Place"
         Me.Text = "PlaceManagement"
-        Me.TabControl1.ResumeLayout(False)
+        Me.EditPlaceName.ResumeLayout(False)
         Me.NewPlaceTab.ResumeLayout(False)
         Me.NewPlaceTab.PerformLayout()
-        Me.EditPlaceTab.ResumeLayout(False)
-        Me.EditPlaceTab.PerformLayout()
+        Me.EditPlaceHabitat.ResumeLayout(False)
+        Me.EditPlaceHabitat.PerformLayout()
         Me.DeletePlaceTab.ResumeLayout(False)
         Me.DeletePlaceTab.PerformLayout()
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -423,9 +529,9 @@ Partial Class Place
 
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Private WithEvents TabControl1 As TabControl
+    Private WithEvents EditPlaceName As TabControl
     Friend WithEvents NewPlaceTab As TabPage
-    Friend WithEvents EditPlaceTab As TabPage
+    Friend WithEvents EditPlaceHabitat As TabPage
     Friend WithEvents DeletePlaceTab As TabPage
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
@@ -450,4 +556,12 @@ Partial Class Place
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents TextBox6 As TextBox
 End Class

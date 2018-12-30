@@ -155,12 +155,21 @@ Public Class Medicine
             CMD.CommandText = "Delete from medicine WHERE MedicineName='" & ComboBox2.Text & "'"
             CMD.Connection = conn
             CMD.ExecuteNonQuery()
-            TextBox4.Text = Result.ToString
             MsgBox("Deletion Success", MsgBoxStyle.Information, "information")
         Catch ex As Exception
             MsgBox("No Data to Delete", MsgBoxStyle.Information, "information")
         End Try
         conn.Close()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Hide()
+        Login.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        ManagementMenu.Show()
     End Sub
 
     Private Sub TextBox3_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox3.KeyPress

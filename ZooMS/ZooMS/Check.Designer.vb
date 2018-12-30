@@ -26,10 +26,8 @@ Partial Class Check
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.FoodCheckTab = New System.Windows.Forms.TabPage()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -58,6 +56,8 @@ Partial Class Check
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.FoodCheckTab.SuspendLayout()
@@ -108,18 +108,10 @@ Partial Class Check
         Me.FoodCheckTab.Text = "Food"
         Me.FoodCheckTab.UseVisualStyleBackColor = True
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(124, 254)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(380, 26)
-        Me.TextBox2.TabIndex = 18
-        '
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(124, 172)
+        Me.TextBox1.Location = New System.Drawing.Point(124, 184)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(380, 26)
@@ -128,29 +120,18 @@ Partial Class Check
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(124, 102)
+        Me.ComboBox1.Location = New System.Drawing.Point(124, 114)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(380, 28)
         Me.ComboBox1.TabIndex = 16
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(35, 214)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(101, 26)
-        Me.Label4.TabIndex = 13
-        Me.Label4.Text = "Quantity"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(35, 141)
+        Me.Label3.Location = New System.Drawing.Point(35, 227)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 26)
         Me.Label3.TabIndex = 12
@@ -161,7 +142,7 @@ Partial Class Check
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(35, 74)
+        Me.Label2.Location = New System.Drawing.Point(35, 75)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(135, 26)
         Me.Label2.TabIndex = 11
@@ -187,6 +168,7 @@ Partial Class Check
         '
         'TextBox3
         '
+        Me.TextBox3.Enabled = False
         Me.TextBox3.Location = New System.Drawing.Point(138, 266)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox3.Name = "TextBox3"
@@ -218,9 +200,9 @@ Partial Class Check
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(50, 226)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(101, 26)
+        Me.Label5.Size = New System.Drawing.Size(72, 26)
         Me.Label5.TabIndex = 21
-        Me.Label5.Text = "Quantity"
+        Me.Label5.Text = "Stock"
         '
         'Label6
         '
@@ -229,9 +211,9 @@ Partial Class Check
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(50, 154)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(72, 26)
+        Me.Label6.Size = New System.Drawing.Size(138, 26)
         Me.Label6.TabIndex = 20
-        Me.Label6.Text = "Stock"
+        Me.Label6.Text = "Medicine ID"
         '
         'Label7
         '
@@ -266,7 +248,8 @@ Partial Class Check
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(138, 284)
+        Me.TextBox7.Enabled = False
+        Me.TextBox7.Location = New System.Drawing.Point(139, 312)
         Me.TextBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(380, 26)
@@ -277,7 +260,7 @@ Partial Class Check
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(50, 244)
+        Me.Label11.Location = New System.Drawing.Point(51, 272)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(88, 26)
         Me.Label11.TabIndex = 25
@@ -285,7 +268,8 @@ Partial Class Check
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(138, 209)
+        Me.TextBox5.Enabled = False
+        Me.TextBox5.Location = New System.Drawing.Point(139, 237)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(380, 26)
@@ -294,7 +278,7 @@ Partial Class Check
         'TextBox6
         '
         Me.TextBox6.Enabled = False
-        Me.TextBox6.Location = New System.Drawing.Point(138, 128)
+        Me.TextBox6.Location = New System.Drawing.Point(139, 156)
         Me.TextBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(380, 26)
@@ -303,7 +287,7 @@ Partial Class Check
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(138, 51)
+        Me.ComboBox3.Location = New System.Drawing.Point(139, 79)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(380, 28)
@@ -314,7 +298,7 @@ Partial Class Check
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(50, 169)
+        Me.Label8.Location = New System.Drawing.Point(51, 197)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(161, 26)
         Me.Label8.TabIndex = 21
@@ -325,7 +309,7 @@ Partial Class Check
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(50, 96)
+        Me.Label9.Location = New System.Drawing.Point(51, 51)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(156, 26)
         Me.Label9.TabIndex = 20
@@ -336,11 +320,11 @@ Partial Class Check
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(50, 22)
+        Me.Label10.Location = New System.Drawing.Point(51, 119)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(117, 26)
+        Me.Label10.Size = New System.Drawing.Size(97, 26)
         Me.Label10.TabIndex = 19
-        Me.Label10.Text = "Animal ID"
+        Me.Label10.Text = "Species"
         '
         'TabPage3
         '
@@ -362,6 +346,7 @@ Partial Class Check
         '
         'TextBox8
         '
+        Me.TextBox8.Enabled = False
         Me.TextBox8.Location = New System.Drawing.Point(138, 246)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox8.Name = "TextBox8"
@@ -460,10 +445,29 @@ Partial Class Check
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "CARE | INSPIRE | EMPOWER"
         '
+        'TextBox2
+        '
+        Me.TextBox2.Enabled = False
+        Me.TextBox2.Location = New System.Drawing.Point(124, 254)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(380, 26)
+        Me.TextBox2.TabIndex = 18
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(35, 149)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(96, 26)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "Food ID"
+        '
         'Check
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(660, 684)
         Me.Controls.Add(Me.TabControl1)
@@ -492,10 +496,8 @@ Partial Class Check
     Friend WithEvents PictureBox1 As PictureBox
     Private WithEvents TabControl1 As TabControl
     Friend WithEvents FoodCheckTab As TabPage
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button3 As Button
@@ -524,4 +526,6 @@ Partial Class Check
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label4 As Label
 End Class
