@@ -31,32 +31,39 @@ Public Class Food
     End Sub
 
     Private Sub TakeFood(sender As Object, e As EventArgs) Handles Button1.Click
-        qty = Convert.ToInt32(TextBox2.Text)
-        stock = Convert.ToInt32(TextBox1.Text)
-        Result = stock - qty
-        If Result < 0 Then
-            MsgBox("Quantity taken cannot exceeds stock, Transaction Failed", MsgBoxStyle.Information, "information")
+        If String.IsNullOrEmpty(ComboBox1.Text) Then
+            MsgBox("Food Name Cannot be Empty", MsgBoxStyle.Information, "information")
         Else
-            conn.Open()
-            Try
-                CMD.CommandType = CommandType.Text
-                CMD.CommandText = "UPDATE food set Stock=" & Result & " WHERE FoodName='" & ComboBox1.Text & "'"
-                CMD.Connection = conn
-                CMD.ExecuteNonQuery()
-                TextBox1.Text = Result.ToString
-                MsgBox("Transaction Success", MsgBoxStyle.Information, "information")
-            Catch ex As Exception
-                MsgBox("Transaction Failed", MsgBoxStyle.Information, "information")
-            End Try
-            conn.Close()
+            qty = Convert.ToInt32(TextBox2.Text)
+            stock = Convert.ToInt32(TextBox1.Text)
+            Result = stock - qty
+            If Result < 0 Then
+                MsgBox("Quantity taken cannot exceeds stock, Transaction Failed", MsgBoxStyle.Information, "information")
+            Else
+                conn.Open()
+                Try
+                    CMD.CommandType = CommandType.Text
+                    CMD.CommandText = "UPDATE food set Stock=" & Result & " WHERE FoodName='" & ComboBox1.Text & "'"
+                    CMD.Connection = conn
+                    CMD.ExecuteNonQuery()
+                    TextBox1.Text = Result.ToString
+                    MsgBox("Transaction Success", MsgBoxStyle.Information, "information")
+                Catch ex As Exception
+                    MsgBox("Transaction Failed", MsgBoxStyle.Information, "information")
+                End Try
+                conn.Close()
+            End If
         End If
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        qty = Convert.ToInt32(TextBox2.Text)
-        stock = Convert.ToInt32(TextBox1.Text)
-        Result = stock + qty
-        conn.Open()
+        If String.IsNullOrEmpty(ComboBox1.Text) Then
+            MsgBox("Food Name Cannot be Empty", MsgBoxStyle.Information, "information")
+        Else
+            qty = Convert.ToInt32(TextBox2.Text)
+            stock = Convert.ToInt32(TextBox1.Text)
+            Result = stock + qty
+            conn.Open()
             Try
                 CMD.CommandType = CommandType.Text
                 CMD.CommandText = "UPDATE medicine set Stock=" & Result & " WHERE MedicineName='" & ComboBox1.Text & "'"
@@ -67,7 +74,8 @@ Public Class Food
             Catch ex As Exception
                 MsgBox("Transaction Failed", MsgBoxStyle.Information, "information")
             End Try
-        conn.Close()
+            conn.Close()
+        End If
     End Sub
 
     Private Sub Food_Load(sender As Object, e As EventArgs) Handles MyBase.Load

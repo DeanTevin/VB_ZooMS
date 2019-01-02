@@ -119,6 +119,7 @@ Partial Class Food
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(124, 102)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)

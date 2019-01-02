@@ -139,7 +139,7 @@ Public Class Place
     End Sub
 
     Private Sub ButtonUp_Click(sender As Object, e As EventArgs) Handles ButtonUp.Click
-        If String.IsNullOrEmpty(ComboBox3.Text) Then
+        If String.IsNullOrEmpty(ComboBox3.Text) And String.IsNullOrEmpty(ComboBox2.Text) Then
             MsgBox("Habitat Cannot be Empty", MsgBoxStyle.Information, "information")
         Else
             conn.Open()
@@ -159,27 +159,31 @@ Public Class Place
     End Sub
 
     Private Sub ButtonDel_Click(sender As Object, e As EventArgs) Handles ButtonDel.Click
-        conn.Open()
-        Try
-            CMD.CommandType = CommandType.Text
-            CMD.CommandText = "Delete from place WHERE PlaceID='" & ComboBox1.Text & "'"
-            CMD.Connection = conn
-            CMD.ExecuteNonQuery()
-            MsgBox("Deletion Success", MsgBoxStyle.Information, "information")
-        Catch ex As Exception
-            MsgBox("No Data to Delete", MsgBoxStyle.Information, "information")
-        End Try
-        conn.Close()
+        If String.IsNullOrEmpty(ComboBox1.Text) Then
+            MsgBox("PlaceID Cannot be Empty", MsgBoxStyle.Information, "information")
+        Else
+            conn.Open()
+            Try
+                CMD.CommandType = CommandType.Text
+                CMD.CommandText = "Delete from place WHERE PlaceID='" & ComboBox1.Text & "'"
+                CMD.Connection = conn
+                CMD.ExecuteNonQuery()
+                MsgBox("Deletion Success", MsgBoxStyle.Information, "information")
+            Catch ex As Exception
+                MsgBox("No Data to Delete", MsgBoxStyle.Information, "information")
+            End Try
+            conn.Close()
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If String.IsNullOrEmpty(TextBox6.Text) Then
+        If String.IsNullOrEmpty(TextBox6.Text) And String.IsNullOrEmpty(ComboBox5.Text) Then
             MsgBox("Name Cannot be Empty", MsgBoxStyle.Information, "information")
         Else
             conn.Open()
             Try
                 CMD.CommandType = CommandType.Text
-                CMD.CommandText = "UPDATE place set PlaceName= '" & TextBox6.Text & "' WHERE PlaceID='" & ComboBox2.Text & "'"
+                CMD.CommandText = "UPDATE place set PlaceName= '" & TextBox6.Text & "' WHERE PlaceID='" & ComboBox5.Text & "'"
                 CMD.Connection = conn
                 CMD.ExecuteNonQuery()
                 TextBox5.Text = TextBox6.Text
@@ -191,4 +195,5 @@ Public Class Place
             conn.Close()
         End If
     End Sub
+
 End Class

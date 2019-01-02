@@ -159,8 +159,8 @@ Public Class Animals
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If String.IsNullOrEmpty(ComboBox3.Text) Then
-            MsgBox("Condition Cannot be Empty", MsgBoxStyle.Information, "information")
+        If String.IsNullOrEmpty(ComboBox3.Text) And String.IsNullOrEmpty(ComboBox1.Text) Then
+            MsgBox("Animal Name and Condition Cannot be Empty", MsgBoxStyle.Information, "information")
         Else
             conn.Open()
             Try
@@ -179,8 +179,8 @@ Public Class Animals
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        If String.IsNullOrEmpty(ComboBox2.Text) Then
-            MsgBox("PlaceName Cannot be Empty", MsgBoxStyle.Information, "information")
+        If String.IsNullOrEmpty(ComboBox2.Text) And String.IsNullOrEmpty(ComboBox5.Text) Then
+            MsgBox("PlaceName and Animal Name Cannot be Empty", MsgBoxStyle.Information, "information")
         Else
             conn.Open()
             Try
@@ -199,16 +199,20 @@ Public Class Animals
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        conn.Open()
-        Try
-            CMD.CommandType = CommandType.Text
-            CMD.CommandText = "Delete from animal WHERE AnimalName='" & ComboBox6.Text & "'"
-            CMD.Connection = conn
-            CMD.ExecuteNonQuery()
-            MsgBox("Deletion Success", MsgBoxStyle.Information, "information")
-        Catch ex As Exception
-            MsgBox("No Data to Delete", MsgBoxStyle.Information, "information")
-        End Try
-        conn.Close()
+        If String.IsNullOrEmpty(ComboBox6.Text) Then
+            MsgBox("PlaceName  Cannot be Empty", MsgBoxStyle.Information, "information")
+        Else
+            conn.Open()
+            Try
+                CMD.CommandType = CommandType.Text
+                CMD.CommandText = "Delete from animal WHERE AnimalName='" & ComboBox6.Text & "'"
+                CMD.Connection = conn
+                CMD.ExecuteNonQuery()
+                MsgBox("Deletion Success", MsgBoxStyle.Information, "information")
+            Catch ex As Exception
+                MsgBox("No Data to Delete", MsgBoxStyle.Information, "information")
+            End Try
+            conn.Close()
+        End If
     End Sub
 End Class

@@ -215,6 +215,7 @@ Partial Class Medicine
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(142, 82)
         Me.ComboBox1.Name = "ComboBox1"
@@ -300,6 +301,7 @@ Partial Class Medicine
         '
         'ComboBox2
         '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(142, 82)
         Me.ComboBox2.Name = "ComboBox2"

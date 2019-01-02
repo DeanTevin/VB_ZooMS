@@ -87,24 +87,28 @@ Public Class Medicine
     End Sub
 
     Private Sub MedicineTake(sender As Object, e As EventArgs) Handles Button5.Click
-        qty = Convert.ToInt32(TextBox3.Text)
-        stock = Convert.ToInt32(TextBox4.Text)
-        Result = stock - qty
-        If Result < 0 Then
-            MsgBox("Quantity taken cannot exceeds stock, Transaction Failed", MsgBoxStyle.Information, "information")
+        If String.IsNullOrEmpty(ComboBox1.Text) Then
+            MsgBox("Medicine Name Cannot be Empty", MsgBoxStyle.Information, "information")
         Else
-            conn.Open()
-            Try
-                CMD.CommandType = CommandType.Text
-                CMD.CommandText = "UPDATE medicine set Stock=" & Result & " WHERE MedicineName='" & ComboBox1.Text & "'"
-                CMD.Connection = conn
-                CMD.ExecuteNonQuery()
-                TextBox4.Text = Result.ToString
-                MsgBox("Transaction Success", MsgBoxStyle.Information, "information")
-            Catch ex As Exception
-                MsgBox("Transaction Failed", MsgBoxStyle.Information, "information")
-            End Try
-            conn.Close()
+            qty = Convert.ToInt32(TextBox3.Text)
+            stock = Convert.ToInt32(TextBox4.Text)
+            Result = stock - qty
+            If Result < 0 Then
+                MsgBox("Quantity taken cannot exceeds stock, Transaction Failed", MsgBoxStyle.Information, "information")
+            Else
+                conn.Open()
+                Try
+                    CMD.CommandType = CommandType.Text
+                    CMD.CommandText = "UPDATE medicine set Stock=" & Result & " WHERE MedicineName='" & ComboBox1.Text & "'"
+                    CMD.Connection = conn
+                    CMD.ExecuteNonQuery()
+                    TextBox4.Text = Result.ToString
+                    MsgBox("Transaction Success", MsgBoxStyle.Information, "information")
+                Catch ex As Exception
+                    MsgBox("Transaction Failed", MsgBoxStyle.Information, "information")
+                End Try
+                conn.Close()
+            End If
         End If
     End Sub
 
@@ -127,39 +131,47 @@ Public Class Medicine
     End Sub
 
     Private Sub MedicineAdd(sender As Object, e As EventArgs) Handles Button4.Click
-        qty = Convert.ToInt32(TextBox3.Text)
-        stock = Convert.ToInt32(TextBox4.Text)
-        Result = stock + qty
-        If Result < 0 Then
-            MsgBox("Quantity taken cannot exceeds stock, Transaction Failed", MsgBoxStyle.Information, "information")
+        If String.IsNullOrEmpty(ComboBox1.Text) Then
+            MsgBox("Medicine Name Cannot be Empty", MsgBoxStyle.Information, "information")
         Else
-            conn.Open()
-            Try
-                CMD.CommandType = CommandType.Text
-                CMD.CommandText = "UPDATE medicine set Stock=" & Result & " WHERE MedicineName='" & ComboBox1.Text & "'"
-                CMD.Connection = conn
-                CMD.ExecuteNonQuery()
-                TextBox4.Text = Result.ToString
-                MsgBox("Transaction Success", MsgBoxStyle.Information, "information")
-            Catch ex As Exception
-                MsgBox("Transaction Failed", MsgBoxStyle.Information, "information")
-            End Try
-            conn.Close()
+            qty = Convert.ToInt32(TextBox3.Text)
+            stock = Convert.ToInt32(TextBox4.Text)
+            Result = stock + qty
+            If Result < 0 Then
+                MsgBox("Quantity taken cannot exceeds stock, Transaction Failed", MsgBoxStyle.Information, "information")
+            Else
+                conn.Open()
+                Try
+                    CMD.CommandType = CommandType.Text
+                    CMD.CommandText = "UPDATE medicine set Stock=" & Result & " WHERE MedicineName='" & ComboBox1.Text & "'"
+                    CMD.Connection = conn
+                    CMD.ExecuteNonQuery()
+                    TextBox4.Text = Result.ToString
+                    MsgBox("Transaction Success", MsgBoxStyle.Information, "information")
+                Catch ex As Exception
+                    MsgBox("Transaction Failed", MsgBoxStyle.Information, "information")
+                End Try
+                conn.Close()
+            End If
         End If
     End Sub
 
     Private Sub DeleteMedicine(sender As Object, e As EventArgs) Handles Button6.Click
-        conn.Open()
-        Try
-            CMD.CommandType = CommandType.Text
-            CMD.CommandText = "Delete from medicine WHERE MedicineName='" & ComboBox2.Text & "'"
-            CMD.Connection = conn
-            CMD.ExecuteNonQuery()
-            MsgBox("Deletion Success", MsgBoxStyle.Information, "information")
-        Catch ex As Exception
-            MsgBox("No Data to Delete", MsgBoxStyle.Information, "information")
-        End Try
-        conn.Close()
+        If String.IsNullOrEmpty(ComboBox2.Text) Then
+            MsgBox("Medicine Name Cannot be Empty", MsgBoxStyle.Information, "information")
+        Else
+            conn.Open()
+            Try
+                CMD.CommandType = CommandType.Text
+                CMD.CommandText = "Delete from medicine WHERE MedicineName='" & ComboBox2.Text & "'"
+                CMD.Connection = conn
+                CMD.ExecuteNonQuery()
+                MsgBox("Deletion Success", MsgBoxStyle.Information, "information")
+            Catch ex As Exception
+                MsgBox("No Data to Delete", MsgBoxStyle.Information, "information")
+            End Try
+            conn.Close()
+        End If
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
